@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.ActivityLogin">
+    <TextView
+        android:id="@+id/tv_ev"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/latobold"
+        android:text="@string/hello"
+        android:textSize="22sp"
+
+        android:textColor="@color/black"
+        android:layout_marginTop="250dp"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="70dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/ycn"
+        android:layout_below="@+id/tv_ev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/latobold"
+        android:text="@string/dummy_text"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="20dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/my_mob"
+        android:layout_below="@+id/ycn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/latoregular"
+        android:text="@string/my_mob"
+        android:textSize="18sp"
+        android:textColor="#191818"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/re_phn"
+        android:layout_width="match_parent"
+        android:layout_below="@id/my_mob"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/img_flag"
+            android:layout_width="20dp"
+            android:src="@drawable/india"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/latoblack"
+            android:text="+91"
+            android:layout_toEndOf="@+id/img_flag"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/edt_mob"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:inputType="phone"
+            android:background="@color/white"
+            android:hint="@string/entermob"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/latoregular"
+            android:maxLength="10"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/tv_code"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:id="@+id/re_btn"
+        android:gravity="center"
+        android:background="@drawable/bg_button"
+        android:layout_below="@id/re_phn"
+        android:layout_marginHorizontal="25dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/btntxt"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/latobold"
+            android:text="@string/continues"
+
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+
+            android:textColor="@color/white"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+
+            android:paddingTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rightarrow"
+            android:layout_toEndOf="@+id/btntxt"
+            android:layout_height="20dp"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_toStartOf="@+id/signup"
+        android:layout_marginVertical="15dp"
+        android:layout_below="@+id/re_btn"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="New User ?"
+        android:fontFamily="@font/latobold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:id="@+id/signup"
+        android:layout_marginEnd="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="15dp"
+        android:layout_below="@+id/re_btn"
+        android:textSize="15sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:text="Sign up"
+        android:fontFamily="@font/latobold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</RelativeLayout>
