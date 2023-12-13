@@ -56,7 +56,7 @@ public class RetrofitRequest {
                     .setLenient()
                     .create();
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://dev11.codebuzzers.net/zaroorihai/api/")
+                    .baseUrl("https://hackthon.mizanur.in/")
                     .client(okHttpClient)
                     .addConverterFactory(GsonConverterFactory.create(gson))
                     .build();

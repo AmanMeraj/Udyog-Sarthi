@@ -3,13 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Register.ActivityRegister">
+<ImageView
+    android:id="@+id/register_logo"
+    android:layout_marginTop="60dp"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/logo"
+    android:layout_width="200dp"
+    android:layout_height="90dp">
 
+</ImageView>
 
 
     <TextView
         android:id="@+id/tv_ev"
-
+android:layout_below="@+id/register_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/latobold"
@@ -17,7 +26,7 @@
         android:textSize="22sp"
         android:padding="3dp"
         android:textColor="@color/black"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="25dp"
         />
 
@@ -133,6 +142,76 @@
                         android:layout_width="match_parent"
                         android:fontFamily="@font/latobold"
                         android:id="@+id/tv_dob"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="?attr/textInputOutlinedStyle"
+                    android:id="@+id/textField_aadhar"
+                    android:layout_below="@+id/ycn"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/ic_baseline_add_card_24"
+                    app:startIconContentDescription="@string/dob"
+                    android:hint="@string/aadhaar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:maxLines="1"
+                        android:maxLength="12"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/latobold"
+                        android:id="@+id/tv_aadhar"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="?attr/textInputOutlinedStyle"
+                    android:id="@+id/textField_phone"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/ic_baseline_phone_24"
+                    app:startIconContentDescription="@string/dob"
+                    android:hint="@string/number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/latobold"
+                        android:id="@+id/tv_phone"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="?attr/textInputOutlinedStyle"
+                    android:id="@+id/textField_qualification"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/ic_baseline_newspaper_24"
+                    android:hint="@string/qualification">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:maxLines="1"
+                        android:maxLength="15"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/latobold"
+                        android:id="@+id/tv_qualification"
                         android:padding="3dp"
                         android:layout_height="wrap_content"
                         />

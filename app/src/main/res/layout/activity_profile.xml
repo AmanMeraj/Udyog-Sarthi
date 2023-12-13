@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent"
+    >
+
+
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/white_curve"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_my_acc"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latobold"
+                android:text="My Account"
+                android:textSize="18sp"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic"
+                android:src="@drawable/profile"
+                android:layout_marginVertical="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_my_acc"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <ImageView
+                android:id="@+id/cam_button"
+                android:padding="5dp"
+                android:background="@drawable/camera_bg"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="-17dp"
+                android:layout_alignTop="@+id/profile_pic"
+                android:layout_toEndOf="@+id/profile_pic"
+                android:src="@drawable/ic_outline_camera_alt_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+            </ImageView>
+<!--            <RelativeLayout-->
+<!--                android:layout_below="@+id/profile_pic"-->
+<!--                android:layout_marginVertical="0dp"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:background="@drawable/bg_button"-->
+<!--                android:id="@+id/my_buisness"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/my_business_btn_txt"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:fontFamily="@font/latoregular"-->
+<!--                    android:text="My Business "-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:textStyle="normal">-->
+
+<!--                </TextView>-->
+
+<!--            </RelativeLayout>-->
+            <RelativeLayout
+                android:background="@drawable/profile_bg"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/profile_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:fontFamily="@font/latobold"
+                    android:id="@+id/personal_info_tv"
+                    android:layout_marginVertical="20dp"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="17sp"
+                    android:text="User Personal Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/name_card"
+                    app:cardCornerRadius="14dp"
+                    android:background="@color/white"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_below="@+id/personal_info_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginVertical="15dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:id="@+id/img_name"
+                            android:src="@drawable/ic_outline_person_24"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp">
+
+                        </ImageView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:id="@+id/name_tv"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Your Name"
+                            android:layout_toEndOf="@+id/img_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:layout_marginBottom="15dp"
+                            android:layout_below="@+id/name_tv"
+                            android:id="@+id/user_name"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="Anna Saha"
+                            android:textColor="@color/black"
+                            android:layout_toEndOf="@+id/img_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/address_card"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="14dp"
+                    android:background="@color/white"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_below="@+id/name_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginVertical="15dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:id="@+id/img_adress"
+                            android:src="@drawable/location"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp">
+
+                        </ImageView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:id="@+id/adress_tv"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Adress"
+                            android:layout_toEndOf="@+id/img_adress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:layout_below="@+id/adress_tv"
+                            android:layout_marginBottom="15dp"
+                            android:id="@+id/user_adress"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="Kolkata,Sector V"
+                            android:textColor="@color/black"
+                            android:layout_toEndOf="@+id/img_adress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/email_card"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="14dp"
+                    android:background="@color/white"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_below="@+id/address_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginVertical="15dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:id="@+id/img_email"
+                            android:src="@drawable/ic_outline_email_24"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp">
+
+                        </ImageView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:id="@+id/email_tv"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Email"
+                            android:layout_toEndOf="@+id/img_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:layout_below="@+id/email_tv"
+                            android:layout_marginBottom="15dp"
+                            android:id="@+id/user_email"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="annasaha1456@gmail.com"
+                            android:textColor="@color/black"
+                            android:layout_toEndOf="@+id/img_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/gender_card"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="14dp"
+                    android:background="@color/white"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_below="@+id/email_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginVertical="15dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:id="@+id/img_gender"
+                            android:src="@drawable/gender"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp">
+
+                        </ImageView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:id="@+id/gender_tv"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Gender"
+                            android:layout_toEndOf="@+id/img_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:layout_below="@+id/gender_tv"
+                            android:layout_marginBottom="15dp"
+                            android:id="@+id/user_gender"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="Female"
+                            android:textColor="@color/black"
+                            android:layout_toEndOf="@+id/img_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dob_card"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="14dp"
+                    android:background="@color/white"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_below="@+id/gender_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginVertical="15dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:id="@+id/img_dob"
+                            android:src="@drawable/calendar"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp">
+
+                        </ImageView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:id="@+id/dob_tv"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Date of Birth"
+                            android:layout_toEndOf="@+id/img_dob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:layout_below="@+id/dob_tv"
+                            android:layout_marginBottom="15dp"
+                            android:id="@+id/user_dob"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="15.09.23"
+                            android:textColor="@color/black"
+                            android:layout_toEndOf="@+id/img_dob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <RelativeLayout
+                    android:background="@drawable/bg_button"
+                    android:layout_below="@+id/dob_card"
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/save_btn_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/latobold"
+                        android:text="SAVE"
+                        android:textColor="@color/white">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+    <include
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/view_loader" />
+
+</RelativeLayout>

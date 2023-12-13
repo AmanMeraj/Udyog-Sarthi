@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsDetails.ActivityNewsDetails">
+    <RelativeLayout
+        android:background="@color/green"
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:src="@drawable/rightarrow"
+            android:rotation="180"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp">
+            
+        </ImageView>
+        
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_marginVertical="5dp"
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/image"
+        android:src="@drawable/news_img"
+        android:layout_marginHorizontal="20dp"
+       android:background="@drawable/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        
+    </ImageView>
+    <TextView
+        android:layout_below="@+id/image"
+        android:id="@+id/title"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/latobold"
+        android:text="Title"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+    </TextView>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:id="@+id/nsv_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginHorizontal="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latoregular"
+                android:text="In a world that is becoming increasingly aware of the importance of diversity and inclusion, the employment landscape is evolving to embrace individuals from all walks of life, including those with disabilities. Companies around the globe are recognizing the untapped potential and unique perspectives that disabled individuals bring to the table. In this blog post, we'll explore the importance of creating job opportunities for disabled persons, the benefits of a diverse workforce, and practical strategies for fostering inclusivity in the workplace.
+
+The Value of Inclusion:
+
+Employing disabled individuals not only promotes social equality but also adds significant value to the workplace. Diversity in the workforce leads to a richer tapestry of skills, experiences, and ideas. Disabled individuals often possess exceptional problem-solving abilities, resilience, and a fresh perspective that can contribute to innovative solutions and a more dynamic work environment.
+
+Benefits for Employers:
+
+Diverse Skillsets: Disabled individuals often develop unique skills as a result of navigating the challenges of their disabilities. These skills can include adaptability, creativity, and a strong work ethic, all of which are highly valuable in the professional sphere.
+
+Enhanced Creativity: A diverse team fosters creativity by bringing together individuals with different ways of thinking and problem-solving. This can lead to more innovative approaches to challenges and a competitive edge in the marketplace.
+
+Improved Employee Morale: Inclusive workplaces tend to have higher employee morale. When everyone feels valued and accepted, it creates a positive atmosphere that can boost productivity and job satisfaction.
+
+Expanded Customer Base: Companies that prioritize diversity are often viewed more favorably by consumers. By employing disabled individuals, businesses demonstrate a commitment to inclusivity, which can attract a broader customer base and strengthen brand reputation.
+
+Practical Strategies for Inclusivity:
+
+Accessible Workspaces: Ensure that physical workspaces are accessible to all employees. This includes ramps, elevators, and accessible restrooms. Digital accessibility is equally important, with websites and software designed to accommodate individuals with various disabilities.
+
+Flexible Work Arrangements: Implement flexible work schedules or remote work options to accommodate the specific needs of disabled employees. This not only supports their well-being but also enhances overall job satisfaction and productivity.
+
+Training and Sensitization: Conduct training programs to raise awareness about disability-related issues and promote a culture of respect and understanding. This can help break down stereotypes and reduce stigmas associated with disabilities.
+
+Reasonable Accommodations: Work with disabled employees to identify and implement reasonable accommodations. This could include adaptive technologies, modified workstations, or flexible break times.
+
+Conclusion:
+
+Creating job opportunities for disabled individuals is not just about meeting legal requirements or checking boxes—it's about recognizing the immense potential and unique contributions that every individual can bring to the table. By fostering inclusivity, businesses can create a work environment that thrives on diversity, innovation, and mutual respect. As we move forward, let us collectively work towards a future where the professional landscape truly reflects the rich tapestry of human experiences."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

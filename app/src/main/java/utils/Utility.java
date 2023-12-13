@@ -81,7 +81,7 @@ public class Utility extends AppCompatActivity {
 
     public void setBottomNavigationColor(){
         //bottom navigation bar color
-        getWindow().setNavigationBarColor(getResources().getColor(R.color.white));
+        getWindow().setNavigationBarColor(getResources().getColor(R.color.white_transparent));
     }
 
     public boolean isInternetConnected(Context con) {

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="110dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/news_bg"
+            android:padding="4dp"
+            android:src="@drawable/logo" />
+
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_toEndOf="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/latobold"
+            android:text="@string/title"
+            android:textSize="17sp"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="22dp"
+            />
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_toEndOf="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/latoregular"
+            android:text="@string/dummy_text"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/latoregular"
+            android:text="@string/date"
+            android:textSize="12sp"
+            android:padding="3dp"
+            android:textColor="#676666"
+            android:layout_marginTop="2dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

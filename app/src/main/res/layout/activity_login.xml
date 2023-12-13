@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/latoregular"
-        android:text="@string/my_mob"
+        android:text="@string/my_email"
         android:textSize="18sp"
         android:textColor="#191818"
         android:textStyle="bold"
@@ -71,38 +71,27 @@
 
 
         <ImageView
-            android:id="@+id/img_flag"
+            android:id="@+id/img_mail"
             android:layout_width="20dp"
-            android:src="@drawable/india"
+            android:src="@drawable/email1"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="15dp"
             android:layout_height="20dp"/>
 
-        <TextView
-            android:id="@+id/tv_code"
-            android:layout_width="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:fontFamily="@font/latoblack"
-            android:text="+91"
-            android:layout_toEndOf="@+id/img_flag"
-            android:layout_height="wrap_content"/>
-
         <EditText
             android:maxLines="1"
-            android:id="@+id/edt_mob"
+            android:id="@+id/edt_email"
             android:layout_width="match_parent"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:inputType="phone"
+            android:inputType="text"
             android:background="@color/white"
-            android:hint="@string/entermob"
+            android:hint="@string/enteremail"
             android:paddingLeft="10dp"
             android:fontFamily="@font/latoregular"
-            android:maxLength="10"
             android:layout_marginLeft="5dp"
-            android:layout_toEndOf="@+id/tv_code"
+            android:layout_toEndOf="@+id/img_mail"
             android:layout_height="wrap_content"/>
 
 
@@ -181,5 +170,9 @@
         android:layout_height="wrap_content">
 
     </TextView>
-
+    <include
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/view_loader" />
 </RelativeLayout>

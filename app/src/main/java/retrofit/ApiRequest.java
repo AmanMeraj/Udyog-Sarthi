@@ -1,5 +1,11 @@
 package retrofit;
 
+import com.example.udyogsathi.Login.LoginResponse;
+import com.example.udyogsathi.Model.User;
+import com.example.udyogsathi.OTP.OtpResponse;
+import com.example.udyogsathi.Register.RegisterRepository;
+import com.example.udyogsathi.Register.RegisterResponse;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -19,27 +25,25 @@ public interface ApiRequest {
 //            @Query("dob") String dob,
 //            @Query("gender") String gender
 //    );
-//@Headers({"Accept: application/json"})
-//@POST("user/register")
-//    Call<DetailsResponse> getRegistered(
-//            @Body User user,
-//            @Query("mobile") String mobile
-//    );
+@Headers({"Accept: application/json"})
+@POST("user/register")
+    Call<RegisterResponse> getRegistered(
+        @Body User user
+        );
 
 
-//    @Headers({"Accept: application/json"})
-//@POST("user/login")
-//    Call<OtpResponse> getLogin(
-//            @Query("mobile") String mobile
-//);
+    @Headers({"Accept: application/json"})
+@POST("user/login")
+    Call<LoginResponse> getLogin(
+           @Body User user
+);
 //
 //
-//    @Headers({"Accept: application/json"})
-//@POST("verify-otp/{id}")
-//    Call<MyOtpResponse> getOtp(
-//            @Body OTP otp,
-//            @Path("id") int id
-//);
+    @Headers({"Accept: application/json"})
+@POST("user/verify")
+    Call<OtpResponse> getOtp(
+@Body User user
+);
 //
 //
 //

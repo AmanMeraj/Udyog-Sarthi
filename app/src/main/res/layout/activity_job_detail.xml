@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobDetail.ActivityJobDetail">
+    <TextView
+        android:id="@+id/tv_job_detail"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/latobold"
+        android:text="Job Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <RelativeLayout
+        android:background="@drawable/job_bg"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/tv_job_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/job_title"
+            android:text="Title"
+            android:textSize="17sp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/latobold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:padding="10dp"
+            android:layout_below="@+id/tv_desc"
+            android:id="@+id/job_desc"
+            android:text="Seeking a dynamic and highly motivated Marketing Coordinator to join our team, responsible for executing innovative marketing campaigns, analyzing market trends, and collaborating with cross-functional teams to drive brand visibility.
+
+We are hiring a detail-oriented Administrative Assistant with exceptional organizational skills to provide comprehensive support, manage office tasks, and ensure seamless day-to-day operations in a fast-paced work environment.
+
+Join our passionate Software Development team as a Junior Software Engineer, contributing to the design and implementation of cutting-edge software solutions, participating in code reviews, and collaborating with senior developers to enhance product functionality."
+            android:textSize="13sp"
+
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/latoregular"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:padding="10dp"
+            android:layout_below="@+id/job_title"
+            android:id="@+id/tv_desc"
+            android:text="Job description"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/latobold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:padding="10dp"
+            android:layout_below="@+id/job_desc"
+            android:id="@+id/tv_study"
+            android:text="Study Material"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/latobold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/tv_study"
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

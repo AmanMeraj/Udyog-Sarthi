@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/white_curve">
+
+        <TextView
+            android:id="@+id/tv_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/latobold"
+            android:text="Help"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/no_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/latobold"
+            android:text="No Tickets Raised"
+            android:textColor="@color/green"
+            android:textSize="18sp">
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/tv_help"
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <ImageView
+
+            android:elevation="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginVertical="25dp"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:src="@drawable/plus"
+            android:background="@drawable/ellipse"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+        </ImageView>
+
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>

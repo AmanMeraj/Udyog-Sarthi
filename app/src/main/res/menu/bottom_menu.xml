@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/home">
+
+    </item>
+    <item
+        android:id="@+id/jobs"
+        android:title="@string/jobs"
+        android:icon="@drawable/jobs">
+
+    </item>
+
+    <item
+        android:id="@+id/support"
+        android:title="@string/support"
+        android:icon="@drawable/help"
+        >
+
+    </item>
+    <item
+        android:id="@+id/community"
+        android:title="@string/community"
+        android:icon="@drawable/community">
+
+    </item>
+
+</menu>

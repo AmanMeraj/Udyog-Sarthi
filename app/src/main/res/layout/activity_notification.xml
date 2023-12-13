@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/green"
+    android:layout_height="match_parent"
+    tools:context=".Notification.ActivityNotification">
+
+
+
+    <RelativeLayout
+        android:translationZ="2dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:layout_marginStart="-2dp"
+            android:scaleType="fitXY"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/toolbar_logo"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+        </ImageView>
+        <ImageView
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:id="@+id/notification"
+            android:visibility="invisible"
+            android:background="@drawable/bell"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:backgroundTint="@color/white">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/wallet"
+
+
+            android:layout_marginTop="12dp"
+            android:layout_toStartOf="@+id/main_balance"
+            android:layout_marginRight="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_marginRight="2dp"
+            android:layout_toStartOf="@id/notification"
+
+
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:id="@+id/main_balance"
+            android:drawablePadding="3dp"
+            android:textSize="12dp"
+
+
+
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rightarrow"
+            android:rotation="180"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"
+
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/white_curve"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/notifications"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+
+                android:fontFamily="@font/latobold"
+                android:text="@string/notifications"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="20dp"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/notifications"
+                android:layout_marginBottom="7dp"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

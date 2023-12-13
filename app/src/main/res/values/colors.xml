@@ -6,6 +6,25 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="blue">#6262E6</color>f
+    <color name="deactive">#CCCCCC</color>
+    <color name="white_transparent">#70FFFFFF</color>
+
+
+
+    <color name="baby_sitting">#376464E7</color>
+    <color name="cleaning">#39BD64E7</color>
+    <color name="cooking">#3964E7C8</color>
+    <color name="driving">#37DDE764</color>
+    <color name="plumbing">#37E78364</color>
+    <color name="homrtutor">#37AD64E7</color>
+    <color name="milkman">#397EE764</color>
+    <color name="nurse">#394751A9</color>
+    <color name="maid">#3751870C</color>
+    <color name="kabdhiwala">#3717A5A5</color>
+    <color name="purohits">#397D8C50</color>
+    <color name="physiotheraist">#3792B0FF</color>
+
     <color name="green">#108A00</color>
-    <color name="white">#FFFFFFFF</color>
+
 </resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Container.ContainerActivity">
+
+    <RelativeLayout
+
+        android:translationZ="2dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/green"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:layout_marginStart="-2dp"
+            android:scaleType="fitXY"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/toolbar_logo"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+        </ImageView>
+        <ImageView
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:id="@+id/notification_bell"
+            android:visibility="visible"
+            android:background="@drawable/bell"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:backgroundTint="@color/white">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/user"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="12dp"
+            android:layout_toStartOf="@+id/notification_bell"
+            android:layout_marginRight="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_marginRight="2dp"
+
+
+
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:id="@+id/main_balance"
+            android:drawablePadding="3dp"
+            android:textSize="12dp"
+
+
+
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/logo"
+            android:layout_width="100dp"
+            android:layout_height="40dp">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        app:defaultNavHost="true"
+        android:layout_marginBottom="50dp"
+        app:navGraph="@navigation/bottom_navigation"
+
+        />
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:background="@drawable/top_curve"
+        android:layout_width="match_parent"
+        android:id="@+id/nav_view_bottom"
+        android:layout_marginEnd="-3dp"
+        android:paddingTop="2dp"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="selected"
+        app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+        android:layout_height="60dp"
+        app:menu="@menu/bottom_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+
+
+
+</RelativeLayout>
