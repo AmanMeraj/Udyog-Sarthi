@@ -363,26 +363,59 @@
 
 
                 </androidx.cardview.widget.CardView>
-                <RelativeLayout
-                    android:background="@drawable/bg_button"
-                    android:layout_below="@+id/dob_card"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/qualification_card"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="14dp"
+                    android:background="@color/white"
                     android:layout_marginHorizontal="20dp"
-                    android:id="@+id/btn_save"
+                    android:layout_below="@+id/dob_card"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp">
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                    <TextView
-                        android:id="@+id/save_btn_txt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:fontFamily="@font/latobold"
-                        android:text="SAVE"
-                        android:textColor="@color/white">
+                        <ImageView
+                            android:layout_marginVertical="15dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:id="@+id/img_qualification"
+                            android:src="@drawable/qualification"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp">
 
-                    </TextView>
+                        </ImageView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:id="@+id/qualification_tv"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Qualification"
+                            android:layout_toEndOf="@+id/img_qualification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
 
-                </RelativeLayout>
+                        </TextView>
+                        <TextView
+                            android:fontFamily="@font/latobold"
+                            android:layout_below="@+id/qualification_tv"
+                            android:layout_marginBottom="15dp"
+                            android:id="@+id/user_qualification"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="B.Tech"
+                            android:textColor="@color/black"
+                            android:layout_toEndOf="@+id/img_qualification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
 
             </RelativeLayout>
 

@@ -31,6 +31,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <service android:name=".Service.SpeechService">
+
+        </service>
         <activity
             android:name=".Notification.ActivityNotification"
             android:exported="false">

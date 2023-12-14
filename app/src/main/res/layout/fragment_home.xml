@@ -26,50 +26,8 @@
                 android:layout_width="match_parent"
                 android:id="@+id/re2"
                 android:scaleType="centerCrop"
+                android:layout_marginVertical="10dp"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/img_pro"
-                    android:layout_width="60dp"
-                    android:layout_marginTop="10dp"
-                    app:layout_collapseMode="parallax"
-                    android:src="@drawable/maskgrp"
-                    android:layout_marginHorizontal="25dp"
-                    android:layout_gravity="center"
-                    android:layout_height="60dp"/>
-                <TextView
-                    android:id="@+id/tv_name"
-                    android:layout_below="@+id/img_pro"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/latobold"
-                    android:text="@string/hi"
-                    android:textSize="22sp"
-                    android:padding="3dp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="7dp"
-                    android:layout_marginHorizontal="25dp"
-                    />
-
-                <TextView
-                    android:id="@+id/lookfor"
-                    android:layout_below="@+id/tv_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_collapseMode="parallax"
-                    android:padding="3dp"
-                    android:fontFamily="@font/latobold"
-                    android:text="@string/hope_you_are_doing_good"
-                    android:textSize="16sp"
-                    android:textColor="@color/white"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="25dp"
-                    />
-
-
-
-
-
 
 
             </RelativeLayout>

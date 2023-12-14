@@ -1,8 +1,10 @@
 package retrofit;
 
+import com.example.udyogsathi.Home.HomeResponse;
 import com.example.udyogsathi.Login.LoginResponse;
 import com.example.udyogsathi.Model.User;
 import com.example.udyogsathi.OTP.OtpResponse;
+import com.example.udyogsathi.Profile.ProfileResponse;
 import com.example.udyogsathi.Register.RegisterRepository;
 import com.example.udyogsathi.Register.RegisterResponse;
 
@@ -44,16 +46,19 @@ public interface ApiRequest {
     Call<OtpResponse> getOtp(
 @Body User user
 );
-//
-//
-//
-//
-//   @Headers({"Accept: application/json"})
-//@GET("providers/")
-//    Call<ServiceResponse> getService(
-//            @Header("Authorization") String auth
-//
-//);
+   @Headers({"Accept: application/json"})
+@GET("user/news/get")
+    Call<HomeResponse> getHome(
+            @Header("token") String auth
+
+);
+   @Headers({"Accept: application/json"})
+@POST("user/info/get")
+    Call<ProfileResponse> getProfile(
+            @Header("token") String auth,
+            @Body User user
+
+);
 //    @Headers({"Accept: application/json"})
 //    @POST("drivers")
 //    Call<DriverNearYouResponse> getDrivers(

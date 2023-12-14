@@ -9,9 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.udyogsathi.Adapter.AdapterJobs;
-import com.example.udyogsathi.Adapter.AdapterNews;
 import com.example.udyogsathi.Model.Jobs;
-import com.example.udyogsathi.Model.News;
 import com.example.udyogsathi.R;
 import com.example.udyogsathi.databinding.FragmentJobsBinding;
 

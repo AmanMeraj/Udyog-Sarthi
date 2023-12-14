@@ -2,21 +2,22 @@ package com.example.udyogsathi.Model;
 
 import java.io.Serializable;
 
-public class User implements Serializable {
+public class Profile implements Serializable {
+
+    public String get_id() {
+        return _id;
+    }
+
+    public void set_id(String _id) {
+        this._id = _id;
+    }
+
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getDob() {
@@ -43,6 +44,14 @@ public class User implements Serializable {
         this.phone = phone;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getHighQualificaton() {
         return highQualificaton;
     }
@@ -67,32 +76,13 @@ public class User implements Serializable {
         Gender = gender;
     }
 
+    public String _id;
     public String name;
-    public String email;
     public String dob;
     public String adress;
     public String phone;
+    public String email;
     public String highQualificaton;
-    public String aadhar;
-    public String Gender;
-
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-    public String userId;
-
-    public String getOtp() {
-        return otp;
-    }
-
-    public void setOtp(String otp) {
-        this.otp = otp;
-    }
-
-    public  String otp;
+    private String aadhar;
+    public  String Gender;
 }

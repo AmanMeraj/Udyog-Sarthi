@@ -155,8 +155,16 @@ String gender="male";
             binding.tvAadhar.setError("Enter Aadhaar number");
             binding.tvAadhar.requestFocus();
             return false;
+        }else if(binding.tvAadhar.getText().toString().length()<12){
+            binding.tvAadhar.setError("Enter proper 12 digit Aadhaar number");
+            binding.tvAadhar.requestFocus();
+            return false;
         }else if(binding.tvPhone.getText().toString().isEmpty()){
             binding.tvPhone.setError("Enter Mobile number");
+            binding.tvPhone.requestFocus();
+            return false;
+        }else if(binding.tvPhone.getText().toString().length()<10){
+            binding.tvPhone.setError("Enter 10 digits Mobile number");
             binding.tvPhone.requestFocus();
             return false;
         }else if(binding.tvQualification.getText().toString().isEmpty()){

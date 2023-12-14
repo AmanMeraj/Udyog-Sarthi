@@ -18,7 +18,7 @@
         android:id="@+id/tv_title"
         android:textColor="@color/black"
         android:fontFamily="@font/latobold"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_marginHorizontal="10dp"
 
         android:layout_toEndOf="@+id/image"
@@ -29,9 +29,10 @@
 
     </TextView>
     <TextView
+        android:maxLines="2"
         android:padding="5dp"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="13sp"
         android:text="description of job which will be displayed on the screen partly"
         android:fontFamily="@font/latoregular"
         android:layout_marginTop="10dp"
@@ -41,7 +42,7 @@
         android:layout_below="@+id/tv_title"
         android:id="@+id/tv_desc"
         android:layout_width="220dp"
-        android:layout_height="60dp">
+        android:layout_height="40dp">
 
     </TextView>
     <ImageView
@@ -51,8 +52,8 @@
         android:layout_marginStart="10dp"
         android:padding="1dp"
         android:src="@drawable/ic_baseline_access_time_24"
-        android:layout_width="20dp"
-        android:layout_height="20dp">
+        android:layout_width="15dp"
+        android:layout_height="15dp">
 
     </ImageView>
     <TextView
@@ -63,7 +64,7 @@
         android:id="@+id/date"
         android:text="40 min's ago"
         android:fontFamily="@font/latoregular"
-        android:textSize="15sp"
+        android:textSize="10sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
