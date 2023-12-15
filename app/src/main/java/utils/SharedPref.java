@@ -32,6 +32,7 @@ public class SharedPref {
     final  public  String lati="23.6645";
     final public String longi="86.9326";
     final public String solution_pdf = "pdf";
+    final public String courseId = "courseId";
 
 
     final public String language = "lang";

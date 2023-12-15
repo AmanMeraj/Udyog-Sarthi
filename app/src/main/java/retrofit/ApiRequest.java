@@ -1,6 +1,8 @@
 package retrofit;
 
 import com.example.udyogsathi.Home.HomeResponse;
+import com.example.udyogsathi.JobDetail.JobDetailResponse;
+import com.example.udyogsathi.Jobs.JobsResponsee;
 import com.example.udyogsathi.Login.LoginResponse;
 import com.example.udyogsathi.Model.User;
 import com.example.udyogsathi.OTP.OtpResponse;
@@ -59,13 +61,19 @@ public interface ApiRequest {
             @Body User user
 
 );
-//    @Headers({"Accept: application/json"})
-//    @POST("drivers")
-//    Call<DriverNearYouResponse> getDrivers(
-//            @Header("Authorization") String auth,
-//            @Query("lat") String lattt,
-//            @Query( "lng") String longiii
-//    );
+    @Headers({"Accept: application/json"})
+    @POST("user/timeline/get")
+    Call<JobsResponsee> getJobs(
+            @Header("token") String auth,
+           @Body User user
+    );
+
+    @Headers({"Accept: application/json"})
+    @POST("tutorial/get")
+    Call<JobDetailResponse> getJobDetails(
+            @Header("token") String auth,
+           @Body User user
+    );
 //
 //    @Headers({"Accept: application/json"})
 //    @POST("home")

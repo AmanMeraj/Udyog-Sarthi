@@ -3,27 +3,31 @@ package com.example.udyogsathi.Model;
 import java.io.Serializable;
 
 public class Module implements Serializable {
-    public String getModule() {
-        return module;
+    public String getTitle() {
+        return title;
     }
 
-    public void setModule(String module) {
-        this.module = module;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public int getArrow() {
-        return arrow;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setArrow(int arrow) {
-        this.arrow = arrow;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
-    public Module(String module, int arrow) {
-        this.module = module;
-        this.arrow = arrow;
+    public Link getOther() {
+        return other;
     }
 
-    public  String module;
-    public int arrow;
+    public void setOther(Link other) {
+        this.other = other;
+    }
+
+    public String title;
+    public String desc;
+    public Link other;
 }

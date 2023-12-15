@@ -76,6 +76,16 @@ public class User implements Serializable {
     public String aadhar;
     public String Gender;
 
+    public String getCourseId() {
+        return courseId;
+    }
+
+    public void setCourseId(String courseId) {
+        this.courseId = courseId;
+    }
+
+    public  String courseId;
+
     public String getUserId() {
         return userId;
     }
